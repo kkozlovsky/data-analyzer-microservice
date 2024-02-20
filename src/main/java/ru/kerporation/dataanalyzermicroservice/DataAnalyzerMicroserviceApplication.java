@@ -1,13 +1,13 @@
-package ru.kerporation.dataanalizermicroservice;
+package ru.kerporation.dataanalyzermicroservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DataAnalizerMicroserviceApplication {
+public class DataAnalyzerMicroserviceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DataAnalizerMicroserviceApplication.class, args);
+		SpringApplication.run(DataAnalyzerMicroserviceApplication.class, args);
 	}
 
 }

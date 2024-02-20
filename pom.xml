@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ru.kerporation</groupId>
-	<artifactId>data-analizer-microservice</artifactId>
+	<artifactId>data-analyzer-microservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>data-analizer-microservice</name>
-	<description>data-analizer-microservice</description>
+	<name>data-analyzer-microservice</name>
+	<description>data-analyzer-microservice</description>
 	<properties>
 		<java.version>21</java.version>
 	</properties>
