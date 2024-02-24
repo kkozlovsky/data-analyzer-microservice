@@ -16,7 +16,7 @@ import lombok.ToString;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "data")
+@Table(schema = "sensor_data", name = "data")
 @NoArgsConstructor
 @Getter
 @Setter
