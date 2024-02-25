@@ -24,6 +24,7 @@
 		<liquibase.version>4.26.0</liquibase.version>
 		<preliquibase.version>1.5.0</preliquibase.version>
 		<postgresql.version>42.7.1</postgresql.version>
+		<checkstyle.version>3.2.2</checkstyle.version>
 	</properties>
 
 	<dependencies>
@@ -100,6 +101,30 @@
 						</exclude>
 					</excludes>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>${checkstyle.version}</version>
+				<configuration>
+					<configLocation>sun_checks.xml</configLocation>
+					<consoleOutput>true</consoleOutput>
+					<failsOnError>true</failsOnError>
+					<linkXRef>false</linkXRef>
+				</configuration>
+				<executions>
+					<execution>
+						<id>validate</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+						<configuration>
+							<suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>
+							<suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

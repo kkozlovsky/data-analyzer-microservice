@@ -1,5 +1,6 @@
 FROM maven:3.9-eclipse-temurin-21-alpine AS build
 COPY /src /src
+COPY checkstyle-suppressions.xml /
 COPY pom.xml /
 RUN mvn -f /pom.xml clean package
 
