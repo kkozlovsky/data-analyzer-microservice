@@ -13,6 +13,7 @@ spring:
   liquibase:
     change-log: classpath:liquibase/db.changelog.yaml
     enabled: true
+    default-schema: ${POSTGRES_SCHEMA}
 server:
   port: 8082
 
